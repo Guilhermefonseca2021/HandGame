@@ -29,8 +29,6 @@ const RockGesture = new GestureDescription("rock");
 RockGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl);
 RockGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl);
 
-
-
 // Criação do gesto "paper" (papel)
 const PaperGesture = new GestureDescription("paper");
 
@@ -41,9 +39,22 @@ const PaperGesture = new GestureDescription("paper");
   }
 );
 
-export {
-RockGesture,
- 
-PaperGesture
-}
+// Criação do gesto "scissors" (tesoura)
+const ScissorsGesture = new GestureDescription("scissors");
 
+// Dedos indicador e médio devem estar estendidos
+[Finger.Index, Finger.Middle].forEach((finger) => {
+  ScissorsGesture.addCurl(finger, FingerCurl.NoCurl);
+});
+
+// Dedo anelar pode estar totalmente ou parcialmente dobrado
+[Finger.Ring, Finger.Pinky].forEach((finger) => {
+  ScissorsGesture.addCurl(finger, FingerCurl.FullCurl);
+  ScissorsGesture.addCurl(finger, FingerCurl.HalfCurl);
+});
+
+export {
+  RockGesture,
+  PaperGesture,
+  ScissorsGesture
+}
