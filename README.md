@@ -2,11 +2,11 @@
 
 - [x] TFJS
 - [ ] Player and opponent are shown next to each other
-- [] The first round of the game is started by the press of a key or button
-- [] A new round starts with a countdown, asking the player to get ready
-- [] Player should show a hand gesture (rock, paper or scissors)
-- [] Once a valid gesture is registered, it is compared to the computer gesture (which is still hidden at this point)
-- [] Winner is awarded one point, score display gets updated
+- [ ] The first round of the game is started by the press of a key or button
+- [ ] A new round starts with a countdown, asking the player to get ready
+- [ ] Player should show a hand gesture (rock, paper or scissors)
+- [ ] Once a valid gesture is registered, it is compared to the computer gesture (which is still hidden at this point)
+- [ ] Winner is awarded one point, score display gets updated
 
 ## Design thinking
 

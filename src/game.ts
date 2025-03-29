@@ -1,6 +1,6 @@
 import * as handPoseDetection from "@tensorflow-models/hand-pose-detection";
 import "@tensorflow/tfjs-backend-webgl";
-import { PaperGesture, RockGesture, ScissorsGesture } from "./helpers/handPose";
+import { PaperGesture, RockGesture, ScissorsGesture } from "./helpers/fingerPose";
 import { GestureEstimator } from "fingerpose";
 
 async function init() {

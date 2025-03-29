@@ -1,20 +1,3 @@
-import { Hands, HandsInterface } from "@mediapipe/hands";
-
-const hands: HandsInterface = new Hands({
-  locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`,
-});
-
-hands.setOptions({
-  maxNumHands: 2,
-  modelComplexity: 1,
-  minDetectionConfidence: 0.5,
-  minTrackingConfidence: 0.5,
-});
-
-hands.onResults((results) => {
-  console.log(results);
-});
-
 import { GestureDescription, Finger, FingerCurl } from "fingerpose";
 
 // Criação do gesto "rock" (pedra)
