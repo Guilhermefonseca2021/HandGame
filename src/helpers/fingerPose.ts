@@ -8,6 +8,15 @@ const RockGesture = new GestureDescription("rock");
   RockGesture.addCurl(finger, FingerCurl.FullCurl);
 });
 
+// Define a gesture (e.g., 'victory' sign)
+const victoryGesture = new GestureDescription('victory');
+
+// Describe the gesture
+victoryGesture.addCurl(Finger.Index, FingerCurl.NoCurl, 1.0);
+victoryGesture.addCurl(Finger.Middle, FingerCurl.NoCurl, 1.0);
+victoryGesture.addCurl(Finger.Ring, FingerCurl.FullCurl, 1.0);
+victoryGesture.addCurl(Finger.Pinky, FingerCurl.FullCurl, 1.0);
+
 // O polegar pode estar levemente dobrado ou estendido
 RockGesture.addCurl(Finger.Thumb, FingerCurl.HalfCurl);
 RockGesture.addCurl(Finger.Thumb, FingerCurl.NoCurl);
@@ -37,6 +46,7 @@ const ScissorsGesture = new GestureDescription("scissors");
 });
 
 export {
+  victoryGesture,
   RockGesture,
   PaperGesture,
   ScissorsGesture
